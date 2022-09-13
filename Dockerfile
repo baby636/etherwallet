@@ -14,7 +14,7 @@ RUN npm install
 RUN npm run dist
 
 
-FROM nginx
+FROM nginx:1.23.1
 
 RUN echo "server {\
   listen 443 ssl; \
